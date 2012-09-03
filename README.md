@@ -1,0 +1,4 @@
+iOS-project
+===========
+
+Financial manager
