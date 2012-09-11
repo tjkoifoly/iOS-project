@@ -1,0 +1,285 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E44B357615FF758900E83D81 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E44B357515FF758900E83D81 /* UIKit.framework */; };
+		E44B357815FF758900E83D81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E44B357715FF758900E83D81 /* Foundation.framework */; };
+		E44B357A15FF758900E83D81 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E44B357915FF758900E83D81 /* CoreGraphics.framework */; };
+		E44B357C15FF758900E83D81 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E44B357B15FF758900E83D81 /* CoreData.framework */; };
+		E44B358215FF758900E83D81 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E44B358015FF758900E83D81 /* InfoPlist.strings */; };
+		E44B358415FF758900E83D81 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E44B358315FF758900E83D81 /* main.m */; };
+		E44B358815FF758900E83D81 /* folyAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E44B358715FF758900E83D81 /* folyAppDelegate.m */; };
+		E44B358B15FF758900E83D81 /* Wallets_Manager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E44B358915FF758900E83D81 /* Wallets_Manager.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E44B357115FF758900E83D81 /* Wallets Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wallets Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E44B357515FF758900E83D81 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E44B357715FF758900E83D81 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E44B357915FF758900E83D81 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E44B357B15FF758900E83D81 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E44B357F15FF758900E83D81 /* Wallets Manager-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Wallets Manager-Info.plist"; sourceTree = "<group>"; };
+		E44B358115FF758900E83D81 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E44B358315FF758900E83D81 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E44B358515FF758900E83D81 /* Wallets Manager-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Wallets Manager-Prefix.pch"; sourceTree = "<group>"; };
+		E44B358615FF758900E83D81 /* folyAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = folyAppDelegate.h; sourceTree = "<group>"; };
+		E44B358715FF758900E83D81 /* folyAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = folyAppDelegate.m; sourceTree = "<group>"; };
+		E44B358A15FF758900E83D81 /* Wallets_Manager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Wallets_Manager.xcdatamodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E44B356E15FF758900E83D81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E44B357615FF758900E83D81 /* UIKit.framework in Frameworks */,
+				E44B357815FF758900E83D81 /* Foundation.framework in Frameworks */,
+				E44B357A15FF758900E83D81 /* CoreGraphics.framework in Frameworks */,
+				E44B357C15FF758900E83D81 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E44B356615FF758900E83D81 = {
+			isa = PBXGroup;
+			children = (
+				E44B357D15FF758900E83D81 /* Wallets Manager */,
+				E44B357415FF758900E83D81 /* Frameworks */,
+				E44B357215FF758900E83D81 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E44B357215FF758900E83D81 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E44B357115FF758900E83D81 /* Wallets Manager.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E44B357415FF758900E83D81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E44B357515FF758900E83D81 /* UIKit.framework */,
+				E44B357715FF758900E83D81 /* Foundation.framework */,
+				E44B357915FF758900E83D81 /* CoreGraphics.framework */,
+				E44B357B15FF758900E83D81 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E44B357D15FF758900E83D81 /* Wallets Manager */ = {
+			isa = PBXGroup;
+			children = (
+				E44B358615FF758900E83D81 /* folyAppDelegate.h */,
+				E44B358715FF758900E83D81 /* folyAppDelegate.m */,
+				E44B358915FF758900E83D81 /* Wallets_Manager.xcdatamodeld */,
+				E44B357E15FF758900E83D81 /* Supporting Files */,
+			);
+			path = "Wallets Manager";
+			sourceTree = "<group>";
+		};
+		E44B357E15FF758900E83D81 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E44B357F15FF758900E83D81 /* Wallets Manager-Info.plist */,
+				E44B358015FF758900E83D81 /* InfoPlist.strings */,
+				E44B358315FF758900E83D81 /* main.m */,
+				E44B358515FF758900E83D81 /* Wallets Manager-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E44B357015FF758900E83D81 /* Wallets Manager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E44B358E15FF758900E83D81 /* Build configuration list for PBXNativeTarget "Wallets Manager" */;
+			buildPhases = (
+				E44B356D15FF758900E83D81 /* Sources */,
+				E44B356E15FF758900E83D81 /* Frameworks */,
+				E44B356F15FF758900E83D81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Wallets Manager";
+			productName = "Wallets Manager";
+			productReference = E44B357115FF758900E83D81 /* Wallets Manager.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E44B356815FF758900E83D81 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = BKHN;
+			};
+			buildConfigurationList = E44B356B15FF758900E83D81 /* Build configuration list for PBXProject "Wallets Manager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E44B356615FF758900E83D81;
+			productRefGroup = E44B357215FF758900E83D81 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E44B357015FF758900E83D81 /* Wallets Manager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E44B356F15FF758900E83D81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E44B358215FF758900E83D81 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E44B356D15FF758900E83D81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E44B358415FF758900E83D81 /* main.m in Sources */,
+				E44B358815FF758900E83D81 /* folyAppDelegate.m in Sources */,
+				E44B358B15FF758900E83D81 /* Wallets_Manager.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E44B358015FF758900E83D81 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E44B358115FF758900E83D81 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E44B358C15FF758900E83D81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E44B358D15FF758900E83D81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E44B358F15FF758900E83D81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Wallets Manager/Wallets Manager-Prefix.pch";
+				INFOPLIST_FILE = "Wallets Manager/Wallets Manager-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E44B359015FF758900E83D81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Wallets Manager/Wallets Manager-Prefix.pch";
+				INFOPLIST_FILE = "Wallets Manager/Wallets Manager-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E44B356B15FF758900E83D81 /* Build configuration list for PBXProject "Wallets Manager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E44B358C15FF758900E83D81 /* Debug */,
+				E44B358D15FF758900E83D81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E44B358E15FF758900E83D81 /* Build configuration list for PBXNativeTarget "Wallets Manager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E44B358F15FF758900E83D81 /* Debug */,
+				E44B359015FF758900E83D81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E44B358915FF758900E83D81 /* Wallets_Manager.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E44B358A15FF758900E83D81 /* Wallets_Manager.xcdatamodel */,
+			);
+			currentVersion = E44B358A15FF758900E83D81 /* Wallets_Manager.xcdatamodel */;
+			path = Wallets_Manager.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E44B356815FF758900E83D81 /* Project object */;
+}
