@@ -15,6 +15,34 @@
 		E44B358415FF758900E83D81 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E44B358315FF758900E83D81 /* main.m */; };
 		E44B358815FF758900E83D81 /* folyAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E44B358715FF758900E83D81 /* folyAppDelegate.m */; };
 		E44B358B15FF758900E83D81 /* Wallets_Manager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E44B358915FF758900E83D81 /* Wallets_Manager.xcdatamodeld */; };
+		E4C1C3A616017F4E000849D6 /* wallet-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E4C1C3A116017F4E000849D6 /* wallet-01.png */; };
+		E4C1C3A716017F4E000849D6 /* wallet-02.png in Resources */ = {isa = PBXBuildFile; fileRef = E4C1C3A216017F4E000849D6 /* wallet-02.png */; };
+		E4C1C3A816017F4E000849D6 /* wallet-04.png in Resources */ = {isa = PBXBuildFile; fileRef = E4C1C3A316017F4E000849D6 /* wallet-04.png */; };
+		E4C1C3A916017F4E000849D6 /* wallet-05.png in Resources */ = {isa = PBXBuildFile; fileRef = E4C1C3A416017F4E000849D6 /* wallet-05.png */; };
+		E4C1C3AA16017F4E000849D6 /* walllet-03.png in Resources */ = {isa = PBXBuildFile; fileRef = E4C1C3A516017F4E000849D6 /* walllet-03.png */; };
+		E4C1C3AC16018270000849D6 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E4C1C3AB16018270000849D6 /* Default.png */; };
+		E4C1C3B2160187D4000849D6 /* navigationbar.png in Resources */ = {isa = PBXBuildFile; fileRef = E4C1C3B1160187D4000849D6 /* navigationbar.png */; };
+		E4C1C3BC16018907000849D6 /* detail.png in Resources */ = {isa = PBXBuildFile; fileRef = E4C1C3BB16018907000849D6 /* detail.png */; };
+		E4C1C3BE1601909F000849D6 /* tabbar-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = E4C1C3BD1601909F000849D6 /* tabbar-bg.png */; };
+		E4C1C3C016019131000849D6 /* selection-tab.png in Resources */ = {isa = PBXBuildFile; fileRef = E4C1C3BF16019131000849D6 /* selection-tab.png */; };
+		E4C1C3C216019154000849D6 /* tabbar.png in Resources */ = {isa = PBXBuildFile; fileRef = E4C1C3C116019154000849D6 /* tabbar.png */; };
+		E4CE2821160166B4007D0E9A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CE281F160166B4007D0E9A /* MainViewController.m */; };
+		E4CE2822160166B4007D0E9A /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4CE2820160166B4007D0E9A /* MainViewController.xib */; };
+		E4CE28281601689E007D0E9A /* WalletsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CE28261601689E007D0E9A /* WalletsViewController.m */; };
+		E4CE28291601689E007D0E9A /* WalletsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4CE28271601689E007D0E9A /* WalletsViewController.xib */; };
+		E4CE283216016E87007D0E9A /* WalletManagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CE283116016E87007D0E9A /* WalletManagerController.m */; };
+		E4CE283616016EE6007D0E9A /* GeneralManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CE283416016EE6007D0E9A /* GeneralManagerViewController.m */; };
+		E4CE283716016EE6007D0E9A /* GeneralManagerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4CE283516016EE6007D0E9A /* GeneralManagerViewController.xib */; };
+		E4CE283B16016F16007D0E9A /* ReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CE283916016F16007D0E9A /* ReportViewController.m */; };
+		E4CE283C16016F16007D0E9A /* ReportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4CE283A16016F16007D0E9A /* ReportViewController.xib */; };
+		E4CE284016016F62007D0E9A /* PlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CE283E16016F62007D0E9A /* PlanViewController.m */; };
+		E4CE284116016F62007D0E9A /* PlanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4CE283F16016F62007D0E9A /* PlanViewController.xib */; };
+		E4CE284516016F7F007D0E9A /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CE284316016F7F007D0E9A /* SettingsViewController.m */; };
+		E4CE284616016F7F007D0E9A /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4CE284416016F7F007D0E9A /* SettingsViewController.xib */; };
+		E4CE284A16017002007D0E9A /* ToolsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CE284816017001007D0E9A /* ToolsViewController.m */; };
+		E4CE284B16017002007D0E9A /* ToolsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4CE284916017002007D0E9A /* ToolsViewController.xib */; };
+		E4CE285D16017917007D0E9A /* backButton.png in Resources */ = {isa = PBXBuildFile; fileRef = E4CE285C16017917007D0E9A /* backButton.png */; };
+		E4CE286016017DD0007D0E9A /* wallet-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E4CE285F16017DD0007D0E9A /* wallet-logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +58,42 @@
 		E44B358615FF758900E83D81 /* folyAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = folyAppDelegate.h; sourceTree = "<group>"; };
 		E44B358715FF758900E83D81 /* folyAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = folyAppDelegate.m; sourceTree = "<group>"; };
 		E44B358A15FF758900E83D81 /* Wallets_Manager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Wallets_Manager.xcdatamodel; sourceTree = "<group>"; };
+		E4C1C3A116017F4E000849D6 /* wallet-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "wallet-01.png"; path = "../../Resources/wallet-01.png"; sourceTree = "<group>"; };
+		E4C1C3A216017F4E000849D6 /* wallet-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "wallet-02.png"; path = "../../Resources/wallet-02.png"; sourceTree = "<group>"; };
+		E4C1C3A316017F4E000849D6 /* wallet-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "wallet-04.png"; path = "../../Resources/wallet-04.png"; sourceTree = "<group>"; };
+		E4C1C3A416017F4E000849D6 /* wallet-05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "wallet-05.png"; path = "../../Resources/wallet-05.png"; sourceTree = "<group>"; };
+		E4C1C3A516017F4E000849D6 /* walllet-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "walllet-03.png"; path = "../../Resources/walllet-03.png"; sourceTree = "<group>"; };
+		E4C1C3AB16018270000849D6 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		E4C1C3B1160187D4000849D6 /* navigationbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navigationbar.png; sourceTree = "<group>"; };
+		E4C1C3BB16018907000849D6 /* detail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = detail.png; sourceTree = "<group>"; };
+		E4C1C3BD1601909F000849D6 /* tabbar-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-bg.png"; sourceTree = "<group>"; };
+		E4C1C3BF16019131000849D6 /* selection-tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "selection-tab.png"; sourceTree = "<group>"; };
+		E4C1C3C116019154000849D6 /* tabbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar.png; sourceTree = "<group>"; };
+		E4CE281E160166B4007D0E9A /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = Views/MainViewController.h; sourceTree = "<group>"; };
+		E4CE281F160166B4007D0E9A /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = Views/MainViewController.m; sourceTree = "<group>"; };
+		E4CE2820160166B4007D0E9A /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainViewController.xib; path = Views/MainViewController.xib; sourceTree = "<group>"; };
+		E4CE28251601689E007D0E9A /* WalletsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WalletsViewController.h; path = Views/WalletsViewController.h; sourceTree = "<group>"; };
+		E4CE28261601689E007D0E9A /* WalletsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WalletsViewController.m; path = Views/WalletsViewController.m; sourceTree = "<group>"; };
+		E4CE28271601689E007D0E9A /* WalletsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WalletsViewController.xib; path = Views/WalletsViewController.xib; sourceTree = "<group>"; };
+		E4CE283016016E87007D0E9A /* WalletManagerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WalletManagerController.h; path = Views/WalletManagerController.h; sourceTree = "<group>"; };
+		E4CE283116016E87007D0E9A /* WalletManagerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WalletManagerController.m; path = Views/WalletManagerController.m; sourceTree = "<group>"; };
+		E4CE283316016EE6007D0E9A /* GeneralManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GeneralManagerViewController.h; path = Views/GeneralManagerViewController.h; sourceTree = "<group>"; };
+		E4CE283416016EE6007D0E9A /* GeneralManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GeneralManagerViewController.m; path = Views/GeneralManagerViewController.m; sourceTree = "<group>"; };
+		E4CE283516016EE6007D0E9A /* GeneralManagerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GeneralManagerViewController.xib; path = Views/GeneralManagerViewController.xib; sourceTree = "<group>"; };
+		E4CE283816016F16007D0E9A /* ReportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReportViewController.h; path = Views/ReportViewController.h; sourceTree = "<group>"; };
+		E4CE283916016F16007D0E9A /* ReportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReportViewController.m; path = Views/ReportViewController.m; sourceTree = "<group>"; };
+		E4CE283A16016F16007D0E9A /* ReportViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ReportViewController.xib; path = Views/ReportViewController.xib; sourceTree = "<group>"; };
+		E4CE283D16016F62007D0E9A /* PlanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlanViewController.h; path = Views/PlanViewController.h; sourceTree = "<group>"; };
+		E4CE283E16016F62007D0E9A /* PlanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlanViewController.m; path = Views/PlanViewController.m; sourceTree = "<group>"; };
+		E4CE283F16016F62007D0E9A /* PlanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PlanViewController.xib; path = Views/PlanViewController.xib; sourceTree = "<group>"; };
+		E4CE284216016F7E007D0E9A /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsViewController.h; path = Views/SettingsViewController.h; sourceTree = "<group>"; };
+		E4CE284316016F7F007D0E9A /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsViewController.m; path = Views/SettingsViewController.m; sourceTree = "<group>"; };
+		E4CE284416016F7F007D0E9A /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SettingsViewController.xib; path = Views/SettingsViewController.xib; sourceTree = "<group>"; };
+		E4CE284716017001007D0E9A /* ToolsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolsViewController.h; sourceTree = "<group>"; };
+		E4CE284816017001007D0E9A /* ToolsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolsViewController.m; sourceTree = "<group>"; };
+		E4CE284916017002007D0E9A /* ToolsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToolsViewController.xib; sourceTree = "<group>"; };
+		E4CE285C16017917007D0E9A /* backButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backButton.png; sourceTree = "<group>"; };
+		E4CE285F16017DD0007D0E9A /* wallet-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wallet-logo.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +114,11 @@
 		E44B356615FF758900E83D81 = {
 			isa = PBXGroup;
 			children = (
+				E4CE281D16016665007D0E9A /* Views */,
+				E4CE281C16016645007D0E9A /* Resources */,
+				E4CE281B1601662B007D0E9A /* Classes */,
+				E4CE281A16016604007D0E9A /* Macro */,
+				E4CE2818160165F8007D0E9A /* CustomUI */,
 				E44B357D15FF758900E83D81 /* Wallets Manager */,
 				E44B357415FF758900E83D81 /* Frameworks */,
 				E44B357215FF758900E83D81 /* Products */,
@@ -95,6 +164,101 @@
 				E44B358515FF758900E83D81 /* Wallets Manager-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E4CE2818160165F8007D0E9A /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CustomUI;
+			sourceTree = "<group>";
+		};
+		E4CE281A16016604007D0E9A /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Macro;
+			sourceTree = "<group>";
+		};
+		E4CE281B1601662B007D0E9A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		E4CE281C16016645007D0E9A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E4C1C3C116019154000849D6 /* tabbar.png */,
+				E4C1C3BF16019131000849D6 /* selection-tab.png */,
+				E4C1C3BD1601909F000849D6 /* tabbar-bg.png */,
+				E4C1C3B1160187D4000849D6 /* navigationbar.png */,
+				E4C1C3BB16018907000849D6 /* detail.png */,
+				E4C1C3AB16018270000849D6 /* Default.png */,
+				E4CE285C16017917007D0E9A /* backButton.png */,
+				E4C1C3A116017F4E000849D6 /* wallet-01.png */,
+				E4C1C3A216017F4E000849D6 /* wallet-02.png */,
+				E4C1C3A316017F4E000849D6 /* wallet-04.png */,
+				E4C1C3A416017F4E000849D6 /* wallet-05.png */,
+				E4C1C3A516017F4E000849D6 /* walllet-03.png */,
+				E4CE285F16017DD0007D0E9A /* wallet-logo.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E4CE281D16016665007D0E9A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E4CE282A16016CD7007D0E9A /* WalletManager */,
+				E4CE282416016868007D0E9A /* Wallets */,
+				E4CE28231601685C007D0E9A /* Main */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		E4CE28231601685C007D0E9A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E4CE281E160166B4007D0E9A /* MainViewController.h */,
+				E4CE281F160166B4007D0E9A /* MainViewController.m */,
+				E4CE2820160166B4007D0E9A /* MainViewController.xib */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		E4CE282416016868007D0E9A /* Wallets */ = {
+			isa = PBXGroup;
+			children = (
+				E4CE28251601689E007D0E9A /* WalletsViewController.h */,
+				E4CE28261601689E007D0E9A /* WalletsViewController.m */,
+				E4CE28271601689E007D0E9A /* WalletsViewController.xib */,
+			);
+			name = Wallets;
+			sourceTree = "<group>";
+		};
+		E4CE282A16016CD7007D0E9A /* WalletManager */ = {
+			isa = PBXGroup;
+			children = (
+				E4CE283016016E87007D0E9A /* WalletManagerController.h */,
+				E4CE283116016E87007D0E9A /* WalletManagerController.m */,
+				E4CE283316016EE6007D0E9A /* GeneralManagerViewController.h */,
+				E4CE283416016EE6007D0E9A /* GeneralManagerViewController.m */,
+				E4CE283516016EE6007D0E9A /* GeneralManagerViewController.xib */,
+				E4CE283816016F16007D0E9A /* ReportViewController.h */,
+				E4CE283916016F16007D0E9A /* ReportViewController.m */,
+				E4CE283A16016F16007D0E9A /* ReportViewController.xib */,
+				E4CE283D16016F62007D0E9A /* PlanViewController.h */,
+				E4CE283E16016F62007D0E9A /* PlanViewController.m */,
+				E4CE283F16016F62007D0E9A /* PlanViewController.xib */,
+				E4CE284216016F7E007D0E9A /* SettingsViewController.h */,
+				E4CE284316016F7F007D0E9A /* SettingsViewController.m */,
+				E4CE284416016F7F007D0E9A /* SettingsViewController.xib */,
+				E4CE284716017001007D0E9A /* ToolsViewController.h */,
+				E4CE284816017001007D0E9A /* ToolsViewController.m */,
+				E4CE284916017002007D0E9A /* ToolsViewController.xib */,
+			);
+			name = WalletManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +313,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				E44B358215FF758900E83D81 /* InfoPlist.strings in Resources */,
+				E4CE2822160166B4007D0E9A /* MainViewController.xib in Resources */,
+				E4CE28291601689E007D0E9A /* WalletsViewController.xib in Resources */,
+				E4CE283716016EE6007D0E9A /* GeneralManagerViewController.xib in Resources */,
+				E4CE283C16016F16007D0E9A /* ReportViewController.xib in Resources */,
+				E4CE284116016F62007D0E9A /* PlanViewController.xib in Resources */,
+				E4CE284616016F7F007D0E9A /* SettingsViewController.xib in Resources */,
+				E4CE284B16017002007D0E9A /* ToolsViewController.xib in Resources */,
+				E4CE285D16017917007D0E9A /* backButton.png in Resources */,
+				E4CE286016017DD0007D0E9A /* wallet-logo.png in Resources */,
+				E4C1C3A616017F4E000849D6 /* wallet-01.png in Resources */,
+				E4C1C3A716017F4E000849D6 /* wallet-02.png in Resources */,
+				E4C1C3A816017F4E000849D6 /* wallet-04.png in Resources */,
+				E4C1C3A916017F4E000849D6 /* wallet-05.png in Resources */,
+				E4C1C3AA16017F4E000849D6 /* walllet-03.png in Resources */,
+				E4C1C3AC16018270000849D6 /* Default.png in Resources */,
+				E4C1C3B2160187D4000849D6 /* navigationbar.png in Resources */,
+				E4C1C3BC16018907000849D6 /* detail.png in Resources */,
+				E4C1C3BE1601909F000849D6 /* tabbar-bg.png in Resources */,
+				E4C1C3C016019131000849D6 /* selection-tab.png in Resources */,
+				E4C1C3C216019154000849D6 /* tabbar.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,6 +346,14 @@
 				E44B358415FF758900E83D81 /* main.m in Sources */,
 				E44B358815FF758900E83D81 /* folyAppDelegate.m in Sources */,
 				E44B358B15FF758900E83D81 /* Wallets_Manager.xcdatamodeld in Sources */,
+				E4CE2821160166B4007D0E9A /* MainViewController.m in Sources */,
+				E4CE28281601689E007D0E9A /* WalletsViewController.m in Sources */,
+				E4CE283216016E87007D0E9A /* WalletManagerController.m in Sources */,
+				E4CE283616016EE6007D0E9A /* GeneralManagerViewController.m in Sources */,
+				E4CE283B16016F16007D0E9A /* ReportViewController.m in Sources */,
+				E4CE284016016F62007D0E9A /* PlanViewController.m in Sources */,
+				E4CE284516016F7F007D0E9A /* SettingsViewController.m in Sources */,
+				E4CE284A16017002007D0E9A /* ToolsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +457,7 @@
 				E44B359015FF758900E83D81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

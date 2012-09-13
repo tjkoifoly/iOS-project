@@ -7,21 +7,50 @@
 //
 
 #import "folyAppDelegate.h"
+#import "MainViewController.h"
 
 @implementation folyAppDelegate
+{
+    UIImageView *splashView;
+}
 
 @synthesize window = _window;
 @synthesize managedObjectContext = __managedObjectContext;
 @synthesize managedObjectModel = __managedObjectModel;
 @synthesize persistentStoreCoordinator = __persistentStoreCoordinator;
 
+@synthesize rootViewController;
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    self.rootViewController = [[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil];
+    self.window.rootViewController = self.rootViewController;
+    
+    //Customize Appearance
+    [self performSelector:@selector(customizeAppearance)];
+    
+    self.window.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Default.png"]];
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+-(void)customizeAppearance
+{
+    
+    //Customize NavigationBar
+    UIImage *gradientImage44 = [[UIImage imageNamed:@"navigationbar"] 
+                                resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
+    [[UINavigationBar appearance] setBackgroundImage:gradientImage44 
+                                       forBarMetrics:UIBarMetricsDefault];
+    
+    //Customize TabBar
+    UIImage *tabBackground = [[UIImage imageNamed:@"tabbar.png"] 
+                              resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
+    [[UITabBar appearance] setBackgroundImage:tabBackground];
+    [[UITabBar appearance] setSelectionIndicatorImage:[UIImage imageNamed:@"selection-tab.png"]];
+
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
