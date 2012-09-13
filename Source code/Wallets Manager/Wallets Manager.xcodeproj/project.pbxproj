@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E4170CE51602470700500937 /* expense-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E4170CE41602470700500937 /* expense-01.png */; };
+		E4170CE81602475700500937 /* expense.png in Resources */ = {isa = PBXBuildFile; fileRef = E4170CE71602475700500937 /* expense.png */; };
+		E4170CEE160248FE00500937 /* expense-02.png in Resources */ = {isa = PBXBuildFile; fileRef = E4170CED160248FE00500937 /* expense-02.png */; };
+		E4170CFC160256BE00500937 /* money-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E4170CFB160256BE00500937 /* money-01.png */; };
+		E4170CFF160256ED00500937 /* chart-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E4170CFE160256ED00500937 /* chart-01.png */; };
+		E4170D011602571600500937 /* plan-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E4170D001602571600500937 /* plan-01.png */; };
+		E4170D031602573700500937 /* tool-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E4170D021602573700500937 /* tool-01.png */; };
+		E4170D051602575800500937 /* settings-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E4170D041602575800500937 /* settings-01.png */; };
+		E4170D071602579900500937 /* save-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E4170D061602579900500937 /* save-01.png */; };
+		E4170D09160257F000500937 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = E4170D08160257EF00500937 /* menu.png */; };
+		E4170D0B160258EF00500937 /* btn-add-02.png in Resources */ = {isa = PBXBuildFile; fileRef = E4170D0A160258EE00500937 /* btn-add-02.png */; };
+		E4170D0E16025C1500500937 /* lock-05.png in Resources */ = {isa = PBXBuildFile; fileRef = E4170D0C16025C1200500937 /* lock-05.png */; };
+		E4170D0F16025C1500500937 /* lock-open-02.png in Resources */ = {isa = PBXBuildFile; fileRef = E4170D0D16025C1300500937 /* lock-open-02.png */; };
 		E44B357615FF758900E83D81 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E44B357515FF758900E83D81 /* UIKit.framework */; };
 		E44B357815FF758900E83D81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E44B357715FF758900E83D81 /* Foundation.framework */; };
 		E44B357A15FF758900E83D81 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E44B357915FF758900E83D81 /* CoreGraphics.framework */; };
@@ -26,6 +39,8 @@
 		E4C1C3BE1601909F000849D6 /* tabbar-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = E4C1C3BD1601909F000849D6 /* tabbar-bg.png */; };
 		E4C1C3C016019131000849D6 /* selection-tab.png in Resources */ = {isa = PBXBuildFile; fileRef = E4C1C3BF16019131000849D6 /* selection-tab.png */; };
 		E4C1C3C216019154000849D6 /* tabbar.png in Resources */ = {isa = PBXBuildFile; fileRef = E4C1C3C116019154000849D6 /* tabbar.png */; };
+		E4C1C3D81601A95B000849D6 /* PageViewControl.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C1C3D61601A95B000849D6 /* PageViewControl.m */; };
+		E4C1C3D91601A95B000849D6 /* PageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4C1C3D71601A95B000849D6 /* PageController.xib */; };
 		E4CE2821160166B4007D0E9A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CE281F160166B4007D0E9A /* MainViewController.m */; };
 		E4CE2822160166B4007D0E9A /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4CE2820160166B4007D0E9A /* MainViewController.xib */; };
 		E4CE28281601689E007D0E9A /* WalletsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CE28261601689E007D0E9A /* WalletsViewController.m */; };
@@ -46,6 +61,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E4170CE41602470700500937 /* expense-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "expense-01.png"; sourceTree = "<group>"; };
+		E4170CE71602475700500937 /* expense.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = expense.png; sourceTree = "<group>"; };
+		E4170CED160248FE00500937 /* expense-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "expense-02.png"; sourceTree = "<group>"; };
+		E4170CFB160256BE00500937 /* money-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "money-01.png"; sourceTree = "<group>"; };
+		E4170CFE160256ED00500937 /* chart-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chart-01.png"; sourceTree = "<group>"; };
+		E4170D001602571600500937 /* plan-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plan-01.png"; sourceTree = "<group>"; };
+		E4170D021602573700500937 /* tool-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tool-01.png"; sourceTree = "<group>"; };
+		E4170D041602575800500937 /* settings-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings-01.png"; sourceTree = "<group>"; };
+		E4170D061602579900500937 /* save-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "save-01.png"; sourceTree = "<group>"; };
+		E4170D08160257EF00500937 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		E4170D0A160258EE00500937 /* btn-add-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-add-02.png"; sourceTree = "<group>"; };
+		E4170D0C16025C1200500937 /* lock-05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lock-05.png"; sourceTree = "<group>"; };
+		E4170D0D16025C1300500937 /* lock-open-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lock-open-02.png"; sourceTree = "<group>"; };
 		E44B357115FF758900E83D81 /* Wallets Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wallets Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E44B357515FF758900E83D81 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E44B357715FF758900E83D81 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -69,6 +97,9 @@
 		E4C1C3BD1601909F000849D6 /* tabbar-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-bg.png"; sourceTree = "<group>"; };
 		E4C1C3BF16019131000849D6 /* selection-tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "selection-tab.png"; sourceTree = "<group>"; };
 		E4C1C3C116019154000849D6 /* tabbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar.png; sourceTree = "<group>"; };
+		E4C1C3D51601A95B000849D6 /* PageViewControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageViewControl.h; sourceTree = "<group>"; };
+		E4C1C3D61601A95B000849D6 /* PageViewControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageViewControl.m; sourceTree = "<group>"; };
+		E4C1C3D71601A95B000849D6 /* PageController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PageController.xib; sourceTree = "<group>"; };
 		E4CE281E160166B4007D0E9A /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = Views/MainViewController.h; sourceTree = "<group>"; };
 		E4CE281F160166B4007D0E9A /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = Views/MainViewController.m; sourceTree = "<group>"; };
 		E4CE2820160166B4007D0E9A /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainViewController.xib; path = Views/MainViewController.xib; sourceTree = "<group>"; };
@@ -169,6 +200,9 @@
 		E4CE2818160165F8007D0E9A /* CustomUI */ = {
 			isa = PBXGroup;
 			children = (
+				E4C1C3D51601A95B000849D6 /* PageViewControl.h */,
+				E4C1C3D61601A95B000849D6 /* PageViewControl.m */,
+				E4C1C3D71601A95B000849D6 /* PageController.xib */,
 			);
 			name = CustomUI;
 			sourceTree = "<group>";
@@ -190,6 +224,19 @@
 		E4CE281C16016645007D0E9A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E4170D0C16025C1200500937 /* lock-05.png */,
+				E4170D0D16025C1300500937 /* lock-open-02.png */,
+				E4170D0A160258EE00500937 /* btn-add-02.png */,
+				E4170D08160257EF00500937 /* menu.png */,
+				E4170D061602579900500937 /* save-01.png */,
+				E4170D041602575800500937 /* settings-01.png */,
+				E4170D021602573700500937 /* tool-01.png */,
+				E4170D001602571600500937 /* plan-01.png */,
+				E4170CFE160256ED00500937 /* chart-01.png */,
+				E4170CFB160256BE00500937 /* money-01.png */,
+				E4170CED160248FE00500937 /* expense-02.png */,
+				E4170CE71602475700500937 /* expense.png */,
+				E4170CE41602470700500937 /* expense-01.png */,
 				E4C1C3C116019154000849D6 /* tabbar.png */,
 				E4C1C3BF16019131000849D6 /* selection-tab.png */,
 				E4C1C3BD1601909F000849D6 /* tabbar-bg.png */,
@@ -333,6 +380,20 @@
 				E4C1C3BE1601909F000849D6 /* tabbar-bg.png in Resources */,
 				E4C1C3C016019131000849D6 /* selection-tab.png in Resources */,
 				E4C1C3C216019154000849D6 /* tabbar.png in Resources */,
+				E4C1C3D91601A95B000849D6 /* PageController.xib in Resources */,
+				E4170CE51602470700500937 /* expense-01.png in Resources */,
+				E4170CE81602475700500937 /* expense.png in Resources */,
+				E4170CEE160248FE00500937 /* expense-02.png in Resources */,
+				E4170CFC160256BE00500937 /* money-01.png in Resources */,
+				E4170CFF160256ED00500937 /* chart-01.png in Resources */,
+				E4170D011602571600500937 /* plan-01.png in Resources */,
+				E4170D031602573700500937 /* tool-01.png in Resources */,
+				E4170D051602575800500937 /* settings-01.png in Resources */,
+				E4170D071602579900500937 /* save-01.png in Resources */,
+				E4170D09160257F000500937 /* menu.png in Resources */,
+				E4170D0B160258EF00500937 /* btn-add-02.png in Resources */,
+				E4170D0E16025C1500500937 /* lock-05.png in Resources */,
+				E4170D0F16025C1500500937 /* lock-open-02.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +415,7 @@
 				E4CE284016016F62007D0E9A /* PlanViewController.m in Sources */,
 				E4CE284516016F7F007D0E9A /* SettingsViewController.m in Sources */,
 				E4CE284A16017002007D0E9A /* ToolsViewController.m in Sources */,
+				E4C1C3D81601A95B000849D6 /* PageViewControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -40,15 +40,15 @@
     
     walletsList = [[NSMutableArray alloc] init];
     
-    NSDictionary *dict = [[NSDictionary alloc] initWithObjectsAndKeys:@"Vi 1", @"name",@"10000", @"money", nil];
+    NSDictionary *dict = [[NSDictionary alloc] initWithObjectsAndKeys:@"Vi 1", @"name",@"10000$", @"money", nil];
     [self.walletsList addObject:dict];
-    NSDictionary *dict2 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Vi 2", @"name",@"10000", @"money", nil];
+    NSDictionary *dict2 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Vi 2", @"name",@"10000$", @"money", nil];
     [self.walletsList addObject:dict2];
-    NSDictionary *dict3 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Vi 3", @"name",@"10000", @"money", nil];
+    NSDictionary *dict3 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Vi 3", @"name",@"10000$", @"money", nil];
     [self.walletsList addObject:dict3];
-    NSDictionary *dict4 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Vi 4", @"name",@"10000", @"money", nil];
+    NSDictionary *dict4 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Vi 4", @"name",@"10000$", @"money", nil];
     [self.walletsList addObject:dict4];
-    NSDictionary *dict5 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Vi 5", @"name",@"10000", @"money", nil];
+    NSDictionary *dict5 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Vi 5", @"name",@"10000$", @"money", nil];
     [self.walletsList addObject:dict5];
 }
 
@@ -89,7 +89,10 @@
     {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:WalletIdentifier];
         cell.imageView.image = [UIImage imageNamed:@"wallet-01"];
-        cell.accessoryView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"detail.png"]];
+        if(indexPath.row % 5 == 0)
+            cell.accessoryView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"lock-open-02.png"]];
+        else
+            cell.accessoryView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"lock-05"]];
         cell.textLabel.text = [[walletsList objectAtIndex:indexPath.row] valueForKey:@"name"];;
         cell.detailTextLabel.text = [[walletsList objectAtIndex:indexPath.row] valueForKey:@"money"];
     }

@@ -15,8 +15,8 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        self.title = NSLocalizedString(@"Lap ke hoach", @"Plan");
-        self.tabBarItem.image = [UIImage imageNamed:@""];
+        self.title = NSLocalizedString(@"Lập kế hoạch", @"Plan");
+        self.tabBarItem.image = [UIImage imageNamed:@"save-01.png"];
     }
     return self;
 }

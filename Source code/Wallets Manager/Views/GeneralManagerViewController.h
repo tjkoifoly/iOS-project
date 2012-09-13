@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GeneralManagerViewController : UIViewController
+@interface GeneralManagerViewController : UIViewController<UIScrollViewDelegate>
+
+@property (nonatomic, retain) IBOutlet UIScrollView *scrollView;
+@property (nonatomic, retain) IBOutlet UIPageControl *pageControl;
+@property (nonatomic, retain) NSMutableArray *viewControllers;
+
+- (IBAction)changePage:(id)sender;
+
+- (void)loadScrollViewWithPage:(int)page;
+- (void)scrollViewDidScroll:(UIScrollView *)sender;
 
 @end

@@ -70,7 +70,7 @@
 							<object class="IBUIButton" id="291272316">
 								<reference key="NSNextResponder" ref="577314253"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{286, 7}, {29, 29}}</string>
+								<string key="NSFrame">{{283, 6}, {32, 32}}</string>
 								<reference key="NSSuperview" ref="577314253"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="152916182"/>
@@ -82,15 +82,16 @@
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								<int key="IBUIContentHorizontalAlignment">0</int>
 								<int key="IBUIContentVerticalAlignment">0</int>
-								<int key="IBUIButtonType">5</int>
+								<bool key="IBUIAdjustsImageWhenHighlighted">NO</bool>
 								<reference key="IBUIHighlightedTitleColor" ref="656850375"/>
-								<object class="NSColor" key="IBUINormalTitleColor">
-									<int key="NSColorSpace">1</int>
-									<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
-								</object>
+								<reference key="IBUINormalTitleColor" ref="656850375"/>
 								<object class="NSColor" key="IBUINormalTitleShadowColor">
 									<int key="NSColorSpace">1</int>
 									<bytes key="NSRGB">MCAwIDAAA</bytes>
+								</object>
+								<object class="NSCustomResource" key="IBUINormalImage">
+									<string key="NSClassName">NSImage</string>
+									<string key="NSResourceName">btn-add-02.png</string>
 								</object>
 								<object class="IBUIFontDescription" key="IBUIFontDescription">
 									<int key="type">2</int>
@@ -116,7 +117,7 @@
 						<array key="IBUIItems">
 							<object class="IBUINavigationItem" id="42203179">
 								<reference key="IBUINavigationBar" ref="577314253"/>
-								<string key="IBUITitle">Wallets Manager</string>
+								<string key="IBUITitle">Ví tiền của bạn</string>
 								<object class="IBUIBarButtonItem" key="IBUIRightBarButtonItem" id="171020169">
 									<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 									<int key="IBUIStyle">1</int>
@@ -379,6 +380,10 @@
 		<string key="IBDocument.TargetRuntimeIdentifier">IBCocoaTouchFramework</string>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
+		<object class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
+			<string key="NS.key.0">btn-add-02.png</string>
+			<string key="NS.object.0">{128, 128}</string>
+		</object>
 		<string key="IBCocoaTouchPluginVersion">933</string>
 	</data>
 </archive>
