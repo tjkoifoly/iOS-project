@@ -7,19 +7,27 @@
 //
 
 #import "GeneralManagerViewController.h"
+#import "AddExpenseViewController.h"
 #import "PageViewControl.h"
+#import "MenuGeneralView.h"
+#import "TapkuLibrary.h"
 
 static NSUInteger kNumberOfPages = 7;
 
 @implementation GeneralManagerViewController
 {
     BOOL pageControlUsed;
+    BOOL showCalendar;
+    BOOL showMenu;
+    AddExpenseViewController *adv;
+    MenuGeneralView *mgv;
     
 }
 
 @synthesize scrollView;
 @synthesize pageControl;
 @synthesize viewControllers;
+@synthesize monthView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -77,11 +85,107 @@ static NSUInteger kNumberOfPages = 7;
     // load the page on either side to avoid flashes when the user starts scrolling
     [self loadScrollViewWithPage:0];
     [self loadScrollViewWithPage:1];
+    
+    showCalendar = NO;
+    showMenu     = NO;
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(addExpense) name:@"AddEvent" object:mgv];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(deleteEvent) name:@"DeleteEvent" object:mgv];
 }
 
 -(void)showMenuView
 {
+    showMenu = !showMenu;
     NSLog(@"Show Menu");
+     if(mgv == nil) 
+     {
+         mgv = (MenuGeneralView *)[[[NSBundle mainBundle] loadNibNamed:@"MenuGeneralView" owner:nil options:nil] objectAtIndex:0];
+         CGRect frame = [mgv frame];
+         frame.origin.x = 320;
+         frame.origin.y = 0;
+         [mgv setFrame:frame];
+         [self.view addSubview:mgv];
+     }
+    
+    if(showMenu)
+        [self viewMoveIn:mgv];
+    else
+        [self viewMoveOut:mgv];
+    
+}
+
+-(void)viewMoveIn:(UIView *)subview
+{
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:0.3]; // if you want to slide up the view
+    [UIView setAnimationBeginsFromCurrentState:YES];
+    
+    CGRect frame = [subview frame];
+    frame.origin.x -= frame.size.width;
+    
+    [subview setFrame:frame];
+    
+    [UIView commitAnimations];
+
+}
+
+-(void)viewMoveOut:(UIView *)subview
+{
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:0.3]; // if you want to slide up the view
+    [UIView setAnimationBeginsFromCurrentState:YES];
+    
+    CGRect frame = [subview frame];
+    frame.origin.x += frame.size.width;
+    
+    [subview setFrame:frame];
+    //[subview removeFromSuperview];
+    [UIView commitAnimations];
+}
+
+-(void)addExpense
+{
+    [self showMenuView];
+    
+    if(adv == nil)
+        adv = [[AddExpenseViewController alloc] initWithNibName:@"AddExpenseViewController" bundle:nil];
+    
+    NSLog(@"SHOW = %@", adv);
+    
+    [self presentModalViewController:adv animated:YES];
+}
+
+-(void)deleteEvent
+{
+    [self showMenuView];
+    NSLog(@"DELETE");
+}
+
+-(void)showCalendar
+{
+     NSLog(@"Show Calendar");
+    showCalendar = !showCalendar;
+    if(monthView == nil)
+    {
+        monthView = [[TKCalendarMonthView alloc] initWithSundayAsFirst:NO];
+        monthView.delegate  = self;
+        monthView.dataSource = self;
+        monthView.center = self.view.center;
+    }
+    
+    if(showCalendar)
+    {
+        [self.view addSubview:monthView];
+        [monthView reload];
+    }else
+    {
+        [monthView removeFromSuperview];
+    }
+
+}
+
+- (NSArray*) calendarMonthView:(TKCalendarMonthView*)monthView marksFromDate:(NSDate*)startDate toDate:(NSDate*)lastDate{
+	return nil;
 }
 
 - (void)viewDidUnload
@@ -90,6 +194,16 @@ static NSUInteger kNumberOfPages = 7;
     scrollView          = nil;
     pageControl         = nil;
     viewControllers     = nil;
+    monthView           = nil;
+    adv                 = nil;
+    mgv                 = nil;
+}
+
+-(void)dealloc
+{
+    [mgv removeFromSuperview];
+    mgv = nil;
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -162,6 +276,13 @@ static NSUInteger kNumberOfPages = 7;
     pageControlUsed = YES;
 }
 
+#pragma mark - Calendar Delegate
+
+-(void)calendarMonthView:(TKCalendarMonthView *)monthView didSelectDate:(NSDate *)date
+{
+    NSLog(@"%@", date);
+    [self performSelector:@selector(showCalendar)];
+}
 
 
 @end

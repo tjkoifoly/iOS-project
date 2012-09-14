@@ -20,6 +20,16 @@
 		E4170D0B160258EF00500937 /* btn-add-02.png in Resources */ = {isa = PBXBuildFile; fileRef = E4170D0A160258EE00500937 /* btn-add-02.png */; };
 		E4170D0E16025C1500500937 /* lock-05.png in Resources */ = {isa = PBXBuildFile; fileRef = E4170D0C16025C1200500937 /* lock-05.png */; };
 		E4170D0F16025C1500500937 /* lock-open-02.png in Resources */ = {isa = PBXBuildFile; fileRef = E4170D0D16025C1300500937 /* lock-open-02.png */; };
+		E4394D1D1603ACB400C75E63 /* AddLoanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4394D1B1603ACB400C75E63 /* AddLoanViewController.m */; };
+		E4394D1E1603ACB400C75E63 /* AddLoanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4394D1C1603ACB400C75E63 /* AddLoanViewController.xib */; };
+		E4394D211603AD0C00C75E63 /* MenuGeneralView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4394D201603AD0C00C75E63 /* MenuGeneralView.m */; };
+		E4394D231603AD2800C75E63 /* MenuGeneralView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4394D221603AD2800C75E63 /* MenuGeneralView.xib */; };
+		E4394D261603AEB100C75E63 /* add-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E4394D241603AEB100C75E63 /* add-01.png */; };
+		E4394D271603AEB100C75E63 /* delete-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E4394D251603AEB100C75E63 /* delete-01.png */; };
+		E4394D291603AF4200C75E63 /* btn-save-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E4394D281603AF4200C75E63 /* btn-save-01.png */; };
+		E4394D2F1603B97F00C75E63 /* cancel-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E4394D2E1603B97F00C75E63 /* cancel-01.png */; };
+		E4394D311603BB2F00C75E63 /* calendar-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E4394D301603BB2E00C75E63 /* calendar-01.png */; };
+		E4394D331603BBA800C75E63 /* calendar-02.png in Resources */ = {isa = PBXBuildFile; fileRef = E4394D321603BBA800C75E63 /* calendar-02.png */; };
 		E44B357615FF758900E83D81 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E44B357515FF758900E83D81 /* UIKit.framework */; };
 		E44B357815FF758900E83D81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E44B357715FF758900E83D81 /* Foundation.framework */; };
 		E44B357A15FF758900E83D81 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E44B357915FF758900E83D81 /* CoreGraphics.framework */; };
@@ -60,7 +70,6 @@
 		E4CE286016017DD0007D0E9A /* wallet-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E4CE285F16017DD0007D0E9A /* wallet-logo.png */; };
 		E4DCEB991602DDB800CA6698 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4DCEB981602DDB800CA6698 /* QuartzCore.framework */; };
 		E4DCEB9B1602DDC200CA6698 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4DCEB9A1602DDC200CA6698 /* MapKit.framework */; };
-		E4DCEB9D1602DDD300CA6698 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4DCEB9C1602DDD300CA6698 /* SenTestingKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		E4DCEB9F1602DDFA00CA6698 /* TapkuLibrary.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E4DCEB9E1602DDFA00CA6698 /* TapkuLibrary.bundle */; };
 		E4DCEBFE1602DE0700CA6698 /* NSArray+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DCEBA21602DE0600CA6698 /* NSArray+TKCategory.m */; };
 		E4DCEBFF1602DE0700CA6698 /* NSDate+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DCEBA41602DE0600CA6698 /* NSDate+TKCategory.m */; };
@@ -108,6 +117,8 @@
 		E4DCEC291602DE0700CA6698 /* UIScrollview+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DCEBF91602DE0700CA6698 /* UIScrollview+TKCategory.m */; };
 		E4DCEC2A1602DE0700CA6698 /* UIView+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DCEBFB1602DE0700CA6698 /* UIView+TKCategory.m */; };
 		E4DCEC2B1602DE0700CA6698 /* UIViewController+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DCEBFD1602DE0700CA6698 /* UIViewController+TKCategory.m */; };
+		E4DCEC421602FB2000CA6698 /* AddExpenseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DCEC401602FB2000CA6698 /* AddExpenseViewController.m */; };
+		E4DCEC431602FB2000CA6698 /* AddExpenseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4DCEC411602FB2000CA6698 /* AddExpenseViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -124,6 +135,18 @@
 		E4170D0A160258EE00500937 /* btn-add-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-add-02.png"; sourceTree = "<group>"; };
 		E4170D0C16025C1200500937 /* lock-05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lock-05.png"; sourceTree = "<group>"; };
 		E4170D0D16025C1300500937 /* lock-open-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lock-open-02.png"; sourceTree = "<group>"; };
+		E4394D1A1603ACB400C75E63 /* AddLoanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddLoanViewController.h; path = ViewDetails/AddLoanViewController.h; sourceTree = "<group>"; };
+		E4394D1B1603ACB400C75E63 /* AddLoanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddLoanViewController.m; path = ViewDetails/AddLoanViewController.m; sourceTree = "<group>"; };
+		E4394D1C1603ACB400C75E63 /* AddLoanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddLoanViewController.xib; path = ViewDetails/AddLoanViewController.xib; sourceTree = "<group>"; };
+		E4394D1F1603AD0C00C75E63 /* MenuGeneralView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuGeneralView.h; path = "Views Extra/MenuGeneralView.h"; sourceTree = "<group>"; };
+		E4394D201603AD0C00C75E63 /* MenuGeneralView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuGeneralView.m; path = "Views Extra/MenuGeneralView.m"; sourceTree = "<group>"; };
+		E4394D221603AD2800C75E63 /* MenuGeneralView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MenuGeneralView.xib; path = "Views Extra/MenuGeneralView.xib"; sourceTree = "<group>"; };
+		E4394D241603AEB100C75E63 /* add-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add-01.png"; sourceTree = "<group>"; };
+		E4394D251603AEB100C75E63 /* delete-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delete-01.png"; sourceTree = "<group>"; };
+		E4394D281603AF4200C75E63 /* btn-save-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-save-01.png"; sourceTree = "<group>"; };
+		E4394D2E1603B97F00C75E63 /* cancel-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cancel-01.png"; sourceTree = "<group>"; };
+		E4394D301603BB2E00C75E63 /* calendar-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calendar-01.png"; sourceTree = "<group>"; };
+		E4394D321603BBA800C75E63 /* calendar-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calendar-02.png"; sourceTree = "<group>"; };
 		E44B357115FF758900E83D81 /* Wallets Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wallets Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E44B357515FF758900E83D81 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E44B357715FF758900E83D81 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -272,6 +295,9 @@
 		E4DCEBFB1602DE0700CA6698 /* UIView+TKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TKCategory.m"; sourceTree = "<group>"; };
 		E4DCEBFC1602DE0700CA6698 /* UIViewController+TKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TKCategory.h"; sourceTree = "<group>"; };
 		E4DCEBFD1602DE0700CA6698 /* UIViewController+TKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TKCategory.m"; sourceTree = "<group>"; };
+		E4DCEC3F1602FB2000CA6698 /* AddExpenseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddExpenseViewController.h; path = ViewDetails/AddExpenseViewController.h; sourceTree = "<group>"; };
+		E4DCEC401602FB2000CA6698 /* AddExpenseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddExpenseViewController.m; path = ViewDetails/AddExpenseViewController.m; sourceTree = "<group>"; };
+		E4DCEC411602FB2000CA6698 /* AddExpenseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddExpenseViewController.xib; path = ViewDetails/AddExpenseViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -279,7 +305,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4DCEB9D1602DDD300CA6698 /* SenTestingKit.framework in Frameworks */,
 				E4DCEB9B1602DDC200CA6698 /* MapKit.framework in Frameworks */,
 				E4DCEB991602DDB800CA6698 /* QuartzCore.framework in Frameworks */,
 				E44B357A15FF758900E83D81 /* CoreGraphics.framework in Frameworks */,
@@ -292,6 +317,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E4394D181603AC7D00C75E63 /* Views Extra */ = {
+			isa = PBXGroup;
+			children = (
+				E4394D1F1603AD0C00C75E63 /* MenuGeneralView.h */,
+				E4394D201603AD0C00C75E63 /* MenuGeneralView.m */,
+				E4394D221603AD2800C75E63 /* MenuGeneralView.xib */,
+			);
+			name = "Views Extra";
+			sourceTree = "<group>";
+		};
 		E44B356615FF758900E83D81 = {
 			isa = PBXGroup;
 			children = (
@@ -379,6 +414,12 @@
 		E4CE281C16016645007D0E9A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E4394D321603BBA800C75E63 /* calendar-02.png */,
+				E4394D301603BB2E00C75E63 /* calendar-01.png */,
+				E4394D2E1603B97F00C75E63 /* cancel-01.png */,
+				E4394D281603AF4200C75E63 /* btn-save-01.png */,
+				E4394D241603AEB100C75E63 /* add-01.png */,
+				E4394D251603AEB100C75E63 /* delete-01.png */,
 				E4170D0C16025C1200500937 /* lock-05.png */,
 				E4170D0D16025C1300500937 /* lock-open-02.png */,
 				E4170D0A160258EE00500937 /* btn-add-02.png */,
@@ -412,6 +453,8 @@
 		E4CE281D16016665007D0E9A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E4394D181603AC7D00C75E63 /* Views Extra */,
+				E4DCEC3E1602FABC00CA6698 /* Views Details */,
 				E4CE282A16016CD7007D0E9A /* WalletManager */,
 				E4CE282416016868007D0E9A /* Wallets */,
 				E4CE28231601685C007D0E9A /* Main */,
@@ -563,6 +606,19 @@
 			path = TapkuLibrary;
 			sourceTree = "<group>";
 		};
+		E4DCEC3E1602FABC00CA6698 /* Views Details */ = {
+			isa = PBXGroup;
+			children = (
+				E4DCEC3F1602FB2000CA6698 /* AddExpenseViewController.h */,
+				E4DCEC401602FB2000CA6698 /* AddExpenseViewController.m */,
+				E4DCEC411602FB2000CA6698 /* AddExpenseViewController.xib */,
+				E4394D1A1603ACB400C75E63 /* AddLoanViewController.h */,
+				E4394D1B1603ACB400C75E63 /* AddLoanViewController.m */,
+				E4394D1C1603ACB400C75E63 /* AddLoanViewController.xib */,
+			);
+			name = "Views Details";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -650,6 +706,15 @@
 				E4170D0E16025C1500500937 /* lock-05.png in Resources */,
 				E4170D0F16025C1500500937 /* lock-open-02.png in Resources */,
 				E4DCEB9F1602DDFA00CA6698 /* TapkuLibrary.bundle in Resources */,
+				E4DCEC431602FB2000CA6698 /* AddExpenseViewController.xib in Resources */,
+				E4394D1E1603ACB400C75E63 /* AddLoanViewController.xib in Resources */,
+				E4394D231603AD2800C75E63 /* MenuGeneralView.xib in Resources */,
+				E4394D261603AEB100C75E63 /* add-01.png in Resources */,
+				E4394D271603AEB100C75E63 /* delete-01.png in Resources */,
+				E4394D291603AF4200C75E63 /* btn-save-01.png in Resources */,
+				E4394D2F1603B97F00C75E63 /* cancel-01.png in Resources */,
+				E4394D311603BB2F00C75E63 /* calendar-01.png in Resources */,
+				E4394D331603BBA800C75E63 /* calendar-02.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -718,6 +783,9 @@
 				E4DCEC291602DE0700CA6698 /* UIScrollview+TKCategory.m in Sources */,
 				E4DCEC2A1602DE0700CA6698 /* UIView+TKCategory.m in Sources */,
 				E4DCEC2B1602DE0700CA6698 /* UIViewController+TKCategory.m in Sources */,
+				E4DCEC421602FB2000CA6698 /* AddExpenseViewController.m in Sources */,
+				E4394D1D1603ACB400C75E63 /* AddLoanViewController.m in Sources */,
+				E4394D211603AD0C00C75E63 /* MenuGeneralView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

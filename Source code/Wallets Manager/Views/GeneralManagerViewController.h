@@ -7,16 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TapkuLibrary.h"
 
-@interface GeneralManagerViewController : UIViewController<UIScrollViewDelegate>
+@interface GeneralManagerViewController : UIViewController<UIScrollViewDelegate, TKCalendarMonthViewDelegate,TKCalendarMonthViewDataSource>
 
 @property (nonatomic, retain) IBOutlet UIScrollView *scrollView;
 @property (nonatomic, retain) IBOutlet UIPageControl *pageControl;
 @property (nonatomic, retain) NSMutableArray *viewControllers;
+@property (strong,nonatomic) TKCalendarMonthView *monthView;
+
 
 - (IBAction)changePage:(id)sender;
 
 - (void)loadScrollViewWithPage:(int)page;
 - (void)scrollViewDidScroll:(UIScrollView *)sender;
+- (void)viewMoveIn:(UIView *)subview;
+- (void)viewMoveOut:(UIView *)subview;
 
 @end
