@@ -60,7 +60,7 @@
 		E4CE286016017DD0007D0E9A /* wallet-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E4CE285F16017DD0007D0E9A /* wallet-logo.png */; };
 		E4DCEB991602DDB800CA6698 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4DCEB981602DDB800CA6698 /* QuartzCore.framework */; };
 		E4DCEB9B1602DDC200CA6698 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4DCEB9A1602DDC200CA6698 /* MapKit.framework */; };
-		E4DCEB9D1602DDD300CA6698 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4DCEB9C1602DDD300CA6698 /* SenTestingKit.framework */; };
+		E4DCEB9D1602DDD300CA6698 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4DCEB9C1602DDD300CA6698 /* SenTestingKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		E4DCEB9F1602DDFA00CA6698 /* TapkuLibrary.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E4DCEB9E1602DDFA00CA6698 /* TapkuLibrary.bundle */; };
 		E4DCEBFE1602DE0700CA6698 /* NSArray+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DCEBA21602DE0600CA6698 /* NSArray+TKCategory.m */; };
 		E4DCEBFF1602DE0700CA6698 /* NSDate+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DCEBA41602DE0600CA6698 /* NSDate+TKCategory.m */; };
