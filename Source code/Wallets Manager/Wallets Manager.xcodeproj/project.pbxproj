@@ -809,7 +809,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Linh Trinh (3G6JEZRP4S)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Linh Trinh (3G6JEZRP4S)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -824,6 +825,8 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PROVISIONING_PROFILE = "D54B9DFD-F72E-426F-965B-E8C7400EBA70";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D54B9DFD-F72E-426F-965B-E8C7400EBA70";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -834,7 +837,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Linh Trinh (3G6JEZRP4S)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Linh Trinh (3G6JEZRP4S)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -843,6 +847,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "D54B9DFD-F72E-426F-965B-E8C7400EBA70";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D54B9DFD-F72E-426F-965B-E8C7400EBA70";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -851,6 +857,8 @@
 		E44B358F15FF758900E83D81 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Linh Trinh (3G6JEZRP4S)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Linh Trinh (3G6JEZRP4S)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
@@ -859,6 +867,8 @@
 				GCC_PREFIX_HEADER = "Wallets Manager/Wallets Manager-Prefix.pch";
 				INFOPLIST_FILE = "Wallets Manager/Wallets Manager-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "85FA7ABA-A82F-4647-AB0A-96294A26A2A1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "85FA7ABA-A82F-4647-AB0A-96294A26A2A1";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -866,6 +876,8 @@
 		E44B359015FF758900E83D81 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Linh Trinh (3G6JEZRP4S)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Linh Trinh (3G6JEZRP4S)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
@@ -874,6 +886,8 @@
 				GCC_PREFIX_HEADER = "Wallets Manager/Wallets Manager-Prefix.pch";
 				INFOPLIST_FILE = "Wallets Manager/Wallets Manager-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "85FA7ABA-A82F-4647-AB0A-96294A26A2A1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "6DB4E687-D7D1-458E-B238-C94AF1B66483";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
