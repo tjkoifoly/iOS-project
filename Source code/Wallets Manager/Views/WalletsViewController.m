@@ -52,8 +52,7 @@
     [self.walletsList addObject:dict5];
 }
 
-- (void)viewDidUnload
-{
+- (void)viewDidUnload {
     [super viewDidUnload];
     table           = nil;
     walletsList     = nil;
