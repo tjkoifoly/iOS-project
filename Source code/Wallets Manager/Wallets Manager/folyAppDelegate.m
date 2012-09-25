@@ -32,30 +32,15 @@
     //Customize Appearance
     [self performSelector:@selector(customizeAppearance)];
     
-//    if([DataBaseAccess createWalletWithName:@"Vi cua tao" andBalance:100. andDate:[NSDate date] andDebt:10 andLoan:10 andPword:@"123456" andImage:@""])
-//    {
-//        NSLog(@"CREATE WALLET");
-//    }
+    if([DataBaseAccess createWalletWithName:@"Vi cua tao" andBalance:100. andDate:[NSDate date] andDebt:10 andLoan:10 andPword:@"123456" andImage:@""])
+    {
+        NSLog(@"CREATE WALLET");
+    }
     
-//    for(int i = 2 ; i< 10 ; i++)
-//    {
-//        if([DataBaseAccess createPlanWithName:[NSString stringWithFormat:@"Ke hoach %i",i ] andAmount:100 andStartDate:[NSDate date] andExpectedDate:[NSDate date] inWallet:[[DataBaseAccess getAllWallet] objectAtIndex:0]])
-//        {
-//            NSLog(@"CREATE PLAN");
-//        }
-//    }
-    
-    //[DataBaseAccess deleteAllPlanOfWallet:[[DataBaseAccess getAllWallet] objectAtIndex:0]];
-    
-//    for(int j = 1; j < 10; j++)
-//    {
-//        if([DataBaseAccess createDebtWithName:[NSString stringWithFormat:@"Khoan no %i", j] andAmount:1000 andDate:[NSDate date] andExpectedDate:[NSDate date] andLender:@"Cong" andNotes:@"Khong co gi" inWallet:[[DataBaseAccess getAllWallet] objectAtIndex:0]])
-//        {
-//            NSLog(@"CREATE DEBT");
-//        }
-//    }
-    
-    [DataBaseAccess deleteWallet:[[DataBaseAccess getAllWallet] objectAtIndex:0]];
+    if([DataBaseAccess createPlanWithName:@"Ke hoach 1" andAmount:100 andStartDate:[NSDate date] andExpectedDate:[NSDate date] inWallet:[[DataBaseAccess getAllWallet] objectAtIndex:0]])
+        {
+            NSLog(@"CREATE PLAN");
+        }
     
     self.window.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Default.png"]];
     [self.window makeKeyAndVisible];
