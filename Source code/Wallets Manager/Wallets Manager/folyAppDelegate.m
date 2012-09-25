@@ -8,7 +8,6 @@
 
 #import "folyAppDelegate.h"
 #import "MainViewController.h"
-#import "DataBaseAccess.h"
 
 @implementation folyAppDelegate
 {
@@ -31,16 +30,6 @@
     
     //Customize Appearance
     [self performSelector:@selector(customizeAppearance)];
-    
-    if([DataBaseAccess createWalletWithName:@"Vi cua tao" andBalance:100. andDate:[NSDate date] andDebt:10 andLoan:10 andPword:@"123456" andImage:@""])
-    {
-        NSLog(@"CREATE WALLET");
-    }
-    
-    if([DataBaseAccess createPlanWithName:@"Ke hoach 1" andAmount:100 andStartDate:[NSDate date] andExpectedDate:[NSDate date] inWallet:[[DataBaseAccess getAllWallet] objectAtIndex:0]])
-        {
-            NSLog(@"CREATE PLAN");
-        }
     
     self.window.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Default.png"]];
     [self.window makeKeyAndVisible];
