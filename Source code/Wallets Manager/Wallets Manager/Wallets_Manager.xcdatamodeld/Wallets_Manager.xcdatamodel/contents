@@ -1,9 +1,95 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="878" systemVersion="11C74" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Wallet" syncable="YES">
+    <entity name="Debt" representedClassName="Debt" syncable="YES">
+        <attribute name="d_amount" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="d_date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="d_expected_date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="d_finished" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="d_lender" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="d_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="d_notes" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="dToDebtHistory" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DebtHistory" inverseName="dhToDebt" inverseEntity="DebtHistory" syncable="YES"/>
+        <relationship name="dToWallet" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Wallet" inverseName="wToDebt" inverseEntity="Wallet" syncable="YES"/>
+    </entity>
+    <entity name="DebtHistory" representedClassName="DebtHistory" syncable="YES">
+        <attribute name="dh_amount" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="dh_date" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="dhToDebt" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Debt" inverseName="dToDebtHistory" inverseEntity="Debt" syncable="YES"/>
+    </entity>
+    <entity name="Expense" representedClassName="Expense" syncable="YES">
+        <attribute name="e_amount" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="e_date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="e_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="e_notes" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="eToExpenseType" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="ExpenseType" inverseName="etToExpense" inverseEntity="ExpenseType" syncable="YES"/>
+        <relationship name="eToPlan" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Plan" inverseName="pToExpense" inverseEntity="Plan" syncable="YES"/>
+    </entity>
+    <entity name="ExpenseType" representedClassName="ExpenseType" syncable="YES">
+        <attribute name="et_name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="etToExpense" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Expense" inverseName="eToExpenseType" inverseEntity="Expense" syncable="YES"/>
+    </entity>
+    <entity name="Income" representedClassName="Income" syncable="YES">
+        <attribute name="i_amount" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="i_date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="i_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="i_notes" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="iToIncomeType" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IncomeType" inverseName="itToIncome" inverseEntity="IncomeType" syncable="YES"/>
+        <relationship name="iToPlan" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Plan" inverseName="pToIncome" inverseEntity="Plan" syncable="YES"/>
+    </entity>
+    <entity name="IncomeType" representedClassName="IncomeType" syncable="YES">
+        <attribute name="it_name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="itToIncome" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Income" inverseName="iToIncomeType" inverseEntity="Income" syncable="YES"/>
+    </entity>
+    <entity name="Loan" representedClassName="Loan" syncable="YES">
+        <attribute name="l_amount" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="l_borrower" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="l_date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="l_expected_date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="l_finished" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="l_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="l_notes" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="lToLoanHistory" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="LoanHistory" inverseName="lhToLoan" inverseEntity="LoanHistory" syncable="YES"/>
+        <relationship name="lToWallet" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Wallet" inverseName="wToLoan" inverseEntity="Wallet" syncable="YES"/>
+    </entity>
+    <entity name="LoanHistory" representedClassName="LoanHistory" syncable="YES">
+        <attribute name="lh_amount" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="lh_date" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="lhToLoan" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Loan" inverseName="lToLoanHistory" inverseEntity="Loan" syncable="YES"/>
+    </entity>
+    <entity name="Plan" representedClassName="Plan" syncable="YES">
+        <attribute name="p_amount" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="p_cancel" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="p_completed" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="p_expected_date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="p_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="p_real_completed_date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="p_start_date" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="pToExpense" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Expense" inverseName="eToPlan" inverseEntity="Expense" syncable="YES"/>
+        <relationship name="pToIncome" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Income" inverseName="iToPlan" inverseEntity="Income" syncable="YES"/>
+        <relationship name="pToWallet" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Wallet" inverseName="wToPlan" inverseEntity="Wallet" syncable="YES"/>
+    </entity>
+    <entity name="Wallet" representedClassName="Wallet" syncable="YES">
+        <attribute name="w_balance" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="w_date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="w_debt" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="w_image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="w_loan" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
         <attribute name="w_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="w_pword" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="wToDebt" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Debt" inverseName="dToWallet" inverseEntity="Debt" syncable="YES"/>
+        <relationship name="wToLoan" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Loan" inverseName="lToWallet" inverseEntity="Loan" syncable="YES"/>
+        <relationship name="wToPlan" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Plan" inverseName="pToWallet" inverseEntity="Plan" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Wallet" positionX="160" positionY="192" width="128" height="60"/>
+        <element name="Debt" positionX="252" positionY="-126" width="128" height="180"/>
+        <element name="DebtHistory" positionX="448" positionY="-90" width="128" height="90"/>
+        <element name="Expense" positionX="-290" positionY="189" width="128" height="135"/>
+        <element name="ExpenseType" positionX="16" positionY="402" width="128" height="75"/>
+        <element name="Income" positionX="268" positionY="135" width="128" height="135"/>
+        <element name="IncomeType" positionX="450" positionY="234" width="128" height="75"/>
+        <element name="Loan" positionX="241" positionY="-339" width="128" height="180"/>
+        <element name="LoanHistory" positionX="439" positionY="-333" width="128" height="90"/>
+        <element name="Plan" positionX="97" positionY="63" width="128" height="195"/>
+        <element name="Wallet" positionX="160" positionY="192" width="128" height="195"/>
     </elements>
 </model>
