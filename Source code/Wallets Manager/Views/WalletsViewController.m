@@ -8,13 +8,20 @@
 
 #import "WalletsViewController.h"
 
+#define kRowHeight 50
+
 @implementation WalletsViewController
+
+
 
 @synthesize table;
 @synthesize walletsList;
 @synthesize delegate;
+@synthesize popupView;
+@synthesize editButton;
+@synthesize deleteButton;
+@synthesize testView;
 @synthesize btnEdit;
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -53,6 +60,10 @@
 }
 
 - (void)viewDidUnload {
+    [self setPopupView:nil];
+    [self setEditButton:nil];
+    [self setDeleteButton:nil];
+    [self setTestView:nil];
     [super viewDidUnload];
     table           = nil;
     walletsList     = nil;
@@ -78,20 +89,31 @@
     return [walletsList count];
 }
 
+-(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return kRowHeight;
+}
+
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *WalletIdentifier = @"WalletIdentifier";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:WalletIdentifier];
     
+    UILongPressGestureRecognizer *longTap = [[UILongPressGestureRecognizer alloc]initWithTarget:self action:@selector(handleLongPress :)];
+    
     if(cell == nil)
     {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:WalletIdentifier];
+        
+        [cell addGestureRecognizer:longTap];
+        
         cell.imageView.image = [UIImage imageNamed:@"wallet-01"];
+        
         if(indexPath.row % 5 == 0)
             cell.accessoryView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"lock-open-02.png"]];
         else
             cell.accessoryView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"lock-05"]];
+        
         cell.textLabel.text = [[walletsList objectAtIndex:indexPath.row] valueForKey:@"name"];;
         cell.detailTextLabel.text = [[walletsList objectAtIndex:indexPath.row] valueForKey:@"money"];
     }
@@ -130,5 +152,71 @@
     [table reloadData];
 }
 
+- (IBAction)editButtonClicked:(id)sender {
+    NSLog(@"edit");
+}
 
+- (IBAction)deleteButtonClicked:(id)sender {
+    NSLog(@"delete");
+}
+
+#pragma mark - UIGesture Delegate
+
+-(void) handleLongPress: (UIGestureRecognizer *)longPress {
+    
+    CGPoint p = [longPress locationInView:self.table];
+    
+    NSIndexPath *indexPath = [self.table indexPathForRowAtPoint:p];
+    if (indexPath == nil)
+        NSLog(@"long press on table view but not on a row");
+    else
+        NSLog(@"long press on table view at row %d", indexPath.row);
+    
+    CGRect currentRowFrame = CGRectMake(0, 0, 320, kRowHeight);
+    currentRowFrame.origin.y = kRowHeight * indexPath.row +40;
+    
+    
+    if (popup == nil) {
+		if (currentMessageIndex == 0) {
+            // testContentView.frame = CGRectMake(100, 20, 200, 100);
+			popup = [[SNPopupView alloc] initWithContentView:testView contentSize:CGSizeMake(150, 54)];
+			//currentMessageIndex++;
+		}
+		else if (currentMessageIndex == 1) {
+			popup = [[SNPopupView alloc] initWithString:@"test message" withFontOfSize:29];
+			currentMessageIndex++;
+		}
+		else if (currentMessageIndex == 2) {
+			popup = [[SNPopupView alloc] initWithImage:[UIImage imageNamed:@"2tchSmall.png"]];
+			currentMessageIndex = 0;
+		}
+		if (YES)
+			[popup presentModalFromButtonItem:nil inView:self.view frame:currentRowFrame animated:YES];
+        //		else
+        //			[popup showFromBarButtonItem:sender inView:self.view animated:animationSwitch.on];
+        
+		[popup addTarget:self action:@selector(didTouchPopupView:)];
+		[popup setDelegate:self];
+	}
+	else if (YES) {
+		//[popup dismiss:YES];
+		popup = nil;
+	}
+}
+
+#pragma mark - PopUp Delegate
+
+- (void)didTouchPopupView:(SNPopupView*)sender {
+//	DNSLogMethod
+//	DNSLog(@"%@", sender);
+}
+
+
+
+- (void)didDismissModal:(SNPopupView*)popupview {
+	//DNSLogMethod
+	if (popupview == popup) {
+		popup = nil;
+	}
+}
 @end
