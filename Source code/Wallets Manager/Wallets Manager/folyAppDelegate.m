@@ -31,19 +31,6 @@
     //Customize Appearance
     [self performSelector:@selector(customizeAppearance)];
     
-<<<<<<< HEAD
-=======
-    if([DataBaseAccess createWalletWithName:@"Vi cua tao" andBalance:100. andDate:[NSDate date] andDebt:10 andLoan:10 andPword:@"123456" andImage:@""])
-    {
-        NSLog(@"CREATE WALLET");
-    }
-    
-    if([DataBaseAccess createPlanWithName:@"Ke hoach 1" andAmount:100 andStartDate:[NSDate date] andExpectedDate:[NSDate date] inWallet:[[DataBaseAccess getAllWallet] objectAtIndex:0]])
-        {
-            NSLog(@"CREATE PLAN");
-        }
-    
->>>>>>> parent of 037c7d2... DB2
     self.window.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Default.png"]];
     [self.window makeKeyAndVisible];
     return YES;
