@@ -46,7 +46,16 @@
 +(NSArray *)getAllExpenseInPlan: (id) plan;
 
 //DELETE OBJECT
-
++(void)deleteObject: (id)object;
++(void)deleteArrayObject: (NSArray *)listObject;
++(void)deleteLoanHistory:(LoanHistory *)hObject;
++(void)deleteDebtHistory:(DebtHistory *)hObject;
++(void)deleteDebt: (Debt *)dObject;
++(void)deleteLoan: (Loan *)lObject;
++(void)deleteIncome: (Income *)iObject;
++(void)deleteExpense: (Expense *)eObject;
++(void)deletePlan: (Plan *)pObject;
++(void)deleteWallet: (Wallet *) wObject;
 
 
 @end

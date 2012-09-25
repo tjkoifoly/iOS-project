@@ -10,6 +10,7 @@
 #import "Debt.h"
 #import "Loan.h"
 #import "Plan.h"
+#import "Attributes.h"
 
 
 @implementation Wallet
