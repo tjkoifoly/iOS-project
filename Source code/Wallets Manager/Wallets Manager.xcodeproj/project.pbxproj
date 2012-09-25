@@ -119,6 +119,17 @@
 		E4DCEC2B1602DE0700CA6698 /* UIViewController+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DCEBFD1602DE0700CA6698 /* UIViewController+TKCategory.m */; };
 		E4DCEC421602FB2000CA6698 /* AddExpenseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DCEC401602FB2000CA6698 /* AddExpenseViewController.m */; };
 		E4DCEC431602FB2000CA6698 /* AddExpenseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4DCEC411602FB2000CA6698 /* AddExpenseViewController.xib */; };
+		E4DCED8A161227A600FCB431 /* LoanHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DCED89161227A600FCB431 /* LoanHistory.m */; };
+		E4DCED8D161227B600FCB431 /* DebtHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DCED8C161227B600FCB431 /* DebtHistory.m */; };
+		E4DCED90161227C400FCB431 /* Debt.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DCED8F161227C400FCB431 /* Debt.m */; };
+		E4DCED93161227D100FCB431 /* Loan.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DCED92161227D100FCB431 /* Loan.m */; };
+		E4DCED96161227E100FCB431 /* Income.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DCED95161227E100FCB431 /* Income.m */; };
+		E4DCED99161227EB00FCB431 /* Expense.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DCED98161227EB00FCB431 /* Expense.m */; };
+		E4DCED9C161227F800FCB431 /* IncomeType.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DCED9B161227F800FCB431 /* IncomeType.m */; };
+		E4DCED9F1612280000FCB431 /* ExpenseType.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DCED9E1612280000FCB431 /* ExpenseType.m */; };
+		E4DCEDA21612280E00FCB431 /* Plan.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DCEDA11612280E00FCB431 /* Plan.m */; };
+		E4DCEDA51612281800FCB431 /* Wallet.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DCEDA41612281800FCB431 /* Wallet.m */; };
+		E4DCEDA91612297600FCB431 /* DataBaseAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DCEDA81612297600FCB431 /* DataBaseAccess.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -298,6 +309,29 @@
 		E4DCEC3F1602FB2000CA6698 /* AddExpenseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddExpenseViewController.h; path = ViewDetails/AddExpenseViewController.h; sourceTree = "<group>"; };
 		E4DCEC401602FB2000CA6698 /* AddExpenseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddExpenseViewController.m; path = ViewDetails/AddExpenseViewController.m; sourceTree = "<group>"; };
 		E4DCEC411602FB2000CA6698 /* AddExpenseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddExpenseViewController.xib; path = ViewDetails/AddExpenseViewController.xib; sourceTree = "<group>"; };
+		E4DCED88161227A600FCB431 /* LoanHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoanHistory.h; path = "Wallets Manager/Model/LoanHistory.h"; sourceTree = "<group>"; };
+		E4DCED89161227A600FCB431 /* LoanHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoanHistory.m; path = "Wallets Manager/Model/LoanHistory.m"; sourceTree = "<group>"; };
+		E4DCED8B161227B600FCB431 /* DebtHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DebtHistory.h; path = "Wallets Manager/Model/DebtHistory.h"; sourceTree = "<group>"; };
+		E4DCED8C161227B600FCB431 /* DebtHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DebtHistory.m; path = "Wallets Manager/Model/DebtHistory.m"; sourceTree = "<group>"; };
+		E4DCED8E161227C400FCB431 /* Debt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Debt.h; path = "Wallets Manager/Model/Debt.h"; sourceTree = "<group>"; };
+		E4DCED8F161227C400FCB431 /* Debt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Debt.m; path = "Wallets Manager/Model/Debt.m"; sourceTree = "<group>"; };
+		E4DCED91161227D100FCB431 /* Loan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Loan.h; path = "Wallets Manager/Model/Loan.h"; sourceTree = "<group>"; };
+		E4DCED92161227D100FCB431 /* Loan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Loan.m; path = "Wallets Manager/Model/Loan.m"; sourceTree = "<group>"; };
+		E4DCED94161227E100FCB431 /* Income.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Income.h; path = "Wallets Manager/Model/Income.h"; sourceTree = "<group>"; };
+		E4DCED95161227E100FCB431 /* Income.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Income.m; path = "Wallets Manager/Model/Income.m"; sourceTree = "<group>"; };
+		E4DCED97161227EB00FCB431 /* Expense.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Expense.h; path = "Wallets Manager/Model/Expense.h"; sourceTree = "<group>"; };
+		E4DCED98161227EB00FCB431 /* Expense.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Expense.m; path = "Wallets Manager/Model/Expense.m"; sourceTree = "<group>"; };
+		E4DCED9A161227F800FCB431 /* IncomeType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IncomeType.h; path = "Wallets Manager/Model/IncomeType.h"; sourceTree = "<group>"; };
+		E4DCED9B161227F800FCB431 /* IncomeType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IncomeType.m; path = "Wallets Manager/Model/IncomeType.m"; sourceTree = "<group>"; };
+		E4DCED9D1612280000FCB431 /* ExpenseType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExpenseType.h; path = "Wallets Manager/Model/ExpenseType.h"; sourceTree = "<group>"; };
+		E4DCED9E1612280000FCB431 /* ExpenseType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExpenseType.m; path = "Wallets Manager/Model/ExpenseType.m"; sourceTree = "<group>"; };
+		E4DCEDA01612280E00FCB431 /* Plan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Plan.h; path = "Wallets Manager/Model/Plan.h"; sourceTree = "<group>"; };
+		E4DCEDA11612280E00FCB431 /* Plan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Plan.m; path = "Wallets Manager/Model/Plan.m"; sourceTree = "<group>"; };
+		E4DCEDA31612281800FCB431 /* Wallet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Wallet.h; path = "Wallets Manager/Model/Wallet.h"; sourceTree = "<group>"; };
+		E4DCEDA41612281800FCB431 /* Wallet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Wallet.m; path = "Wallets Manager/Model/Wallet.m"; sourceTree = "<group>"; };
+		E4DCEDA61612297600FCB431 /* Attributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Attributes.h; sourceTree = "<group>"; };
+		E4DCEDA71612297600FCB431 /* DataBaseAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBaseAccess.h; sourceTree = "<group>"; };
+		E4DCEDA81612297600FCB431 /* DataBaseAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataBaseAccess.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -330,6 +364,7 @@
 		E44B356615FF758900E83D81 = {
 			isa = PBXGroup;
 			children = (
+				E4DCED7D1612272000FCB431 /* Model */,
 				E4CE281D16016665007D0E9A /* Views */,
 				E4CE281C16016645007D0E9A /* Resources */,
 				E4CE281B1601662B007D0E9A /* Classes */,
@@ -619,6 +654,36 @@
 			name = "Views Details";
 			sourceTree = "<group>";
 		};
+		E4DCED7D1612272000FCB431 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E4DCEDA31612281800FCB431 /* Wallet.h */,
+				E4DCEDA41612281800FCB431 /* Wallet.m */,
+				E4DCEDA01612280E00FCB431 /* Plan.h */,
+				E4DCEDA11612280E00FCB431 /* Plan.m */,
+				E4DCED9D1612280000FCB431 /* ExpenseType.h */,
+				E4DCED9E1612280000FCB431 /* ExpenseType.m */,
+				E4DCED9A161227F800FCB431 /* IncomeType.h */,
+				E4DCED9B161227F800FCB431 /* IncomeType.m */,
+				E4DCED97161227EB00FCB431 /* Expense.h */,
+				E4DCED98161227EB00FCB431 /* Expense.m */,
+				E4DCED94161227E100FCB431 /* Income.h */,
+				E4DCED95161227E100FCB431 /* Income.m */,
+				E4DCED91161227D100FCB431 /* Loan.h */,
+				E4DCED92161227D100FCB431 /* Loan.m */,
+				E4DCED8E161227C400FCB431 /* Debt.h */,
+				E4DCED8F161227C400FCB431 /* Debt.m */,
+				E4DCED8B161227B600FCB431 /* DebtHistory.h */,
+				E4DCED8C161227B600FCB431 /* DebtHistory.m */,
+				E4DCED88161227A600FCB431 /* LoanHistory.h */,
+				E4DCED89161227A600FCB431 /* LoanHistory.m */,
+				E4DCEDA61612297600FCB431 /* Attributes.h */,
+				E4DCEDA71612297600FCB431 /* DataBaseAccess.h */,
+				E4DCEDA81612297600FCB431 /* DataBaseAccess.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -786,6 +851,17 @@
 				E4DCEC421602FB2000CA6698 /* AddExpenseViewController.m in Sources */,
 				E4394D1D1603ACB400C75E63 /* AddLoanViewController.m in Sources */,
 				E4394D211603AD0C00C75E63 /* MenuGeneralView.m in Sources */,
+				E4DCED8A161227A600FCB431 /* LoanHistory.m in Sources */,
+				E4DCED8D161227B600FCB431 /* DebtHistory.m in Sources */,
+				E4DCED90161227C400FCB431 /* Debt.m in Sources */,
+				E4DCED93161227D100FCB431 /* Loan.m in Sources */,
+				E4DCED96161227E100FCB431 /* Income.m in Sources */,
+				E4DCED99161227EB00FCB431 /* Expense.m in Sources */,
+				E4DCED9C161227F800FCB431 /* IncomeType.m in Sources */,
+				E4DCED9F1612280000FCB431 /* ExpenseType.m in Sources */,
+				E4DCEDA21612280E00FCB431 /* Plan.m in Sources */,
+				E4DCEDA51612281800FCB431 /* Wallet.m in Sources */,
+				E4DCEDA91612297600FCB431 /* DataBaseAccess.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
