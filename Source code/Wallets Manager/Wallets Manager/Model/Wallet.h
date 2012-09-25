@@ -14,7 +14,7 @@
 @interface Wallet : NSManagedObject
 
 @property (nonatomic, retain) NSString * w_name;
-@property (nonatomic, retain) NSString * w_balance;
+@property (nonatomic, retain) NSNumber * w_balance;
 @property (nonatomic, retain) NSDate * w_date;
 @property (nonatomic, retain) NSString * w_pword;
 @property (nonatomic, retain) NSString * w_image;

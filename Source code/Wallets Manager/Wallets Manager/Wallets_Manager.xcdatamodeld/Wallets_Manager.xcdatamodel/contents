@@ -69,7 +69,7 @@
         <relationship name="pToWallet" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Wallet" inverseName="wToPlan" inverseEntity="Wallet" syncable="YES"/>
     </entity>
     <entity name="Wallet" representedClassName="Wallet" syncable="YES">
-        <attribute name="w_balance" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="w_balance" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
         <attribute name="w_date" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="w_debt" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
         <attribute name="w_image" optional="YES" attributeType="String" syncable="YES"/>
@@ -81,7 +81,7 @@
         <relationship name="wToPlan" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Plan" inverseName="pToWallet" inverseEntity="Plan" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Wallet" positionX="-15932" positionY="-7614" width="128" height="195"/>
+        <element name="Wallet" positionX="-12870" positionY="-6777" width="128" height="195"/>
         <element name="Plan" positionX="-15941" positionY="-7326" width="128" height="195"/>
         <element name="Debt" positionX="-15759" positionY="-7398" width="128" height="180"/>
         <element name="IncomeType" positionX="-16184" positionY="-7365" width="128" height="75"/>
